@@ -1,0 +1,48 @@
+[
+	
+	{
+		"name": "OSMO",
+		"org": "Oakland Science and Mathematics Outreach",
+		"short_desc": "OSMO is an afterschool program based out of the Boys and Girls Club, supporting middle and high school students in math, science, technology, and digital media.",
+		"long_desc": "OSMO is an afterschool program based out of the Boys and Girls Club, supporting middle and high school students in math, science, technology, and digital media.",
+		"address": "1701 Broadway, Oakland, CA 94612",
+		"zipcode": 94612,
+		"cost": 0,
+		"categories": "Tech",
+		"school": "Oakland Technical High School",
+		"beg_date": "Jan 23",
+		"end_date": "May 15",
+		"time": "Fri 3pm-4pm",
+		"likes": "222", 
+		"lat": 37.7919584, 
+		"lng": -122.2287941
+	},
+    {
+		"name": "Rock:Ridge",
+		"org": "Anime club",
+		"short_desc": "Rockridge librry has an anime club which shows asia animation and has youth from all around the bay area coming to view anime and talk about manga among other things.",
+		"long_desc": "Rock:Anime club, out going youth group. Rock: Fun ",
+		"address": "5366 College Ave Oakland, CA 94618",
+		"zipcode": 94618,
+		"cost": 0,
+		"categories": "Animation",
+		"library": "Rockridge Library",
+		"beg_date": "Every first tuesday of the month",
+		"time": "Tue 3:30pm-6pm",
+		"likes": "32",
+		"lat": 37.8398805, 
+		"lng": -122.2512808
+	},
+	{
+		"name": "Self defence art",
+		"org": "Russian Sambo",
+		"short_desc": "Russian Sambo a deadly art of martial arts which was created by the Russians that is even incorperated by the military",
+		"long_desc": "Hi",
+		"lat": 37.7744477,
+		"lng":-122.4203719
+	}
+		
+		
+	
+
+]

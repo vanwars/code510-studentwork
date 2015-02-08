@@ -1,0 +1,211 @@
+<html>
+ <head>
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/styles/styles001.css">
+  <title>connor's profile</title>
+ 	<script src=/javascript/basic.js>
+</script>
+<script>
+function resizePhoto(div_size){
+	//alert("DIV:" + document.getElementById('profilephoto') +" height: " + document.getElementById('profilephoto').style.height);
+	document.getElementById('profilephoto').style.height = div_size+"px";
+}
+/** brings up sellers if fpix was opened from it
+**/
+function bringUpSellers()
+{
+	if (!window.opener)
+		return false;
+	if (window.name != 'fpix_sellers')
+		//if the opener is a group, raising sellers like this will not work:
+		return false;
+	if (navigator.userAgent.indexOf('Firefox') > -1)
+	{
+		//FF has an option under Tools that prohibits raising windows by script
+		window.blur();
+		return true;
+	}
+	if (navigator.userAgent.indexOf('Chrome/6') > -1){
+		//I have no idea why this works
+		console.log("CHROME 7");
+		window.opener.blur(); 
+		return true;
+	}	
+	if (navigator.userAgent.indexOf('Chrome/7') > -1){
+		//I have no idea why this works
+		window.opener.focus(); 
+		return true;
+	}
+	if (navigator.userAgent.indexOf('MSIE 9') > -1){
+		window.blur(); 
+		return true;
+	}
+	window.opener.focus();
+	return true;
+}
+
+function makeChatButton(label, username, sid){
+	var content = '<div class="yellow_but" style="float:right; margin-bottom:10px;"><a href="javascript:startChat(\''+username+'\',\''+sid+'\')">'+label+'</a></div>'; 
+	document.getElementById("chatbutton_div").innerHTML = content;
+}
+
+function startChat(username, sid){
+	if(window.opener && window.name == 'fpix_sellers'){
+		document.getElementById("flash_emb").openTab();
+		window.opener.focus();
+	} else {
+		document.getElementById("flash_emb").cookieTab();
+		var href_arr = String(window.location.href).split("/");
+		var url_arr = String(href_arr[2]).split(".");
+		url_arr.shift();
+		var url = "http://" + sid + "." + url_arr.join(".");
+		window.name = "sellers";
+		window.location = url;
+	}
+}
+
+function changeWindowNameToSellers(){
+	window.name = "sellers";
+}
+
+</script>
+<link rel="stylesheet" href="/styles/profiles_styles.css">
+
+
+
+<link rel="stylesheet" href="http://st.chatango.com/profileimg/c/o/connor/custom_profile.css">
+
+
+
+ </head>
+
+
+
+<body      class="desktop"
+  
+ style="background-image:none">
+
+ 
+ 
+ 
+
+
+	
+	
+	
+		
+	
+	
+	
+	
+	
+		
+		
+	
+
+
+<div id="fpix_wrapper">
+<table cellpadding="0" cellspacing="0" class="fpix_header">
+<tr><td>
+<div class="logo_div" style="width:115px; height:41px">
+<a href="/home"><img src="images/svg/logo.svg" /></a>
+</div></td><td class=topad>
+		 
+	 	<!-- adnetwork_leaderboard_code -->
+	 	<!-- BEGIN JS TAG - [MP_chatango.com] - Default < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=999041&size=728x90&pubclick=[INSERT_CLICK_TAG]" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG -->
+
+	 
+
+</td></tr></table>
+<div id=outer_container>
+<div id=left_container>
+
+<div id=profilephoto style="overflow:hidden; width:300px; height:300px;"">
+
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" id="flash_obj" width="100%" height="100%">
+  <param name="wmode" value="transparent" />
+  <param name="allowScriptAccess" value="always" />
+  <param name="allowNetworking" value="all" />
+  <param name="devicefont" value="true" />
+  <param name="FlashVars" value="sellerid=connor&base_domain=chatango.com" />
+  <param name="movie" value="http://st.chatango.com/flash/fpix.swf" />
+  <param name="quality" value="high" />
+  <embed src="http://st.chatango.com/flash/fpix.swf" quality="high" width="100%" height="100%" devicefont="true" id="flash_emb" wmode="transparent" allowScriptAccess="always" allowNetworking="all" type="application/x-shockwave-flash" FlashVars="sellerid=connor&base_domain=chatango.com"></embed>
+  </object>
+
+</div>
+<div id="chatbutton_div"></div>
+<br />
+  	 
+	 	<!-- adnetwork_rect_code -->
+		 <!-- BEGIN JS TAG - [MP_chatango.com] - Default < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=999041&size=300x250&pubclick=[INSERT_CLICK_TAG]" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG -->
+
+	 
+
+
+</div> <!-- end of left container -->
+<!-- google_ad_section_start -->
+<table id=asltable class=fpix_asl_table>
+<tr><td width = 65></td><td><img src="images/pixel.gif" width = "227" height="1" /><br /></td><td></td></tr>
+<tr><td valign = "top"><span class="profile_text"><strong>Age:</strong></span></td><td><span class="profile_text">18<br /></span></td>
+<td rowspan=3></td></tr>
+<tr><td valign = "top"><span class="profile_text"><strong>Gender:</strong></span></td><td><span class="profile_text">M <br /></span></td></tr>
+<tr><td valign = "top"><span class="profile_text"><strong>Location:</strong></span></td><td><span class="profile_text">Mohawk, WV <br /><br /></span></td></tr>
+<!-- google_ad_section_end -->
+</table>
+<span class="profile_text"><strong><!-- google_ad_section_start -->About Connor:<!-- google_ad_section_end --></strong>
+<span class="profile_text"><!-- google_ad_section_start --><p align="center"><font color="#6fb7d8">✶ <font color="#6a94bc">✷ <font color="#6672a1">✸ <font color="#614f85">✹ <font color="#6672a1">✸ <font color="#6a94bc">✷ <font color="#6fb7d8">✶
+<font face="small fonts" size="10"><font color="#000000">I didn't want to be <font color="#6fb7d8">the one to forget
+<font face="ariel" size="12"><font color="#6fb7d8">↳<font color="#333333">thought of everything I'd never regret<font color="#614f85">↰
+<font face="small fonts" size="10"><font color="#614f85">A little time with y<font color="#000000">ou is all that I get
+<font face="impact" size="16"><font color="#6fb7d8">T<font color="#6eb2d4">h<font color="#6eaccf">a<font color="#6da7cb">t<font color="#6ca1c7">’<font color="#6b9cc2">s <font color="#6b96be">a<font color="#6a91b9">l<font color="#698bb5">l <font color="#6886b1">w<font color="#6880ac">e <font color="#677ba8">n<font color="#6675a4">e<font color="#65709f">e<font color="#656a9b">d <font color="#646596">b<font color="#635f92">e<font color="#625a8e">c<font color="#625489">a<font color="#614f85">u<font color="#62558a">s<font color="#635b8e">e <font color="#636093">i<font color="#646697">t<font color="#656c9c">'<font color="#6672a1">s <font color="#6677a5">a<font color="#677daa">l<font color="#6883af">l <font color="#6989b3">w<font color="#6a8fb8">e <font color="#6a94bc">c<font color="#6b9ac1">a<font color="#6ca0c6">n <font color="#6da6ca">t<font color="#6dabcf">a<font color="#6eb1d3">k<font color="#6fb7d8">e
+<font face="ariel" size="9" color="#000000">Assassin's Creed Ⅲ <font color="#6fb7d8">⇈⇈<font color="#614f85">⇊⇊ <font color="#000000">Connor Kenway<br><font size="10"><p align="left"><br>
+Other Accounts: Haytham, Ratonhnhaketon, Deanna, Electromatic
+Webite: connorkenway.ml
+
+<Tags:assassins/assassin/creed/connor/kenway/rp/roleplay/assassins creed/assassins/connor kenway/edward kenway/haytham kenway><!-- google_ad_section_end --></span>
+<br>
+
+</div> <!-- end of outer_container -->
+</div> <!-- end of fpix_wrapper -->
+
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" id="profile_builder" width="1" height="1" align="middle">
+<param name="allowScriptAccess" value="always" />
+<param name="allowNetworking" value="all" />
+<param name="FlashVars" value="handle=connor" />
+<param name="movie" value="http://st.chatango.com/flash/profile_builder.swf" />
+<param name="quality" value="low" />
+<param name="bgcolor" value="#ffffff" />
+<param name="wmode" value="transparent">
+<embed src="http://st.chatango.com/flash/profile_builder.swf" quality="low" bgcolor="#ffffff" width="1" height="1" swLiveConnect=true id="profile_builder" name="profile_builder" align="middle" allowScriptAccess="always" allowNetworking="all" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" FlashVars="handle=connor" />
+</object>
+
+
+
+ 
+
+ <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7965405-1");
+pageTracker._trackPageview("/fpix");
+} catch(err) {}</script>
+
+
+ <center>
+  <table width=625 cellspacing=0 cellpadding=0 border=0>
+   <tr>
+    <td><img src="/images/pixel.gif" height=5 width=1 border=0></td>
+   </tr>
+  </table>
+  </center>
+ </body>
+</html>
