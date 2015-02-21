@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>WORDS.</title></title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        
+        <style>
+            body { 
+                background-color: #D8D8D8;
+              
+            }
+            div {
+                border: solid 1px #CCC9B6;
+                padding: 20px;
+                margin: 20px;
+                background-color: #424242;
+                display: inline-block;
+            }
+            .spin-me {
+            	transition: all 1s ease-in-out;
+            }
+            .spin-me:hover {
+            	transform:rotate(360deg);
+            }
+            img {
+                height: 300px;
+                margin-bottom: 10px;
+                transition: all 1s ease-in-out;
+            }
+            img:hover {
+                height: 320px;
+                transition: all 1s ease-in-out;
+            }
+            span {
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('button').click(showMessage);
+            });
+            
+            function showMessage() {
+            	var price = $(this).parent().find('span').html();
+            	alert("Please send me " + price + ".");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>WORDS.</h1>
+        <p>GO AWAY, OR I'LL BITE YOU!</p>
+ 
+        <div>
+            <img src="images/ITEMS/photo.PNG" />
+            <br />
+            Price: <span>6,000 points</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>   
+        <div>
+            <img src="images/ITEMS/photo2.PNG" />
+            <br />
+            Price: <span>4,500 points</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>   
+        <div>
+            <img src="images/ITEMS/photo3.png" />
+            <br />
+            Price: <span>3,000 points</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>  
+        <div>
+            <img src="images/ITEMS/photo4.png" />
+            <br />
+            Price: <span>4,000 points</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+            div {
+                border: solid 1px #CCC9B6;
+                padding: 10px;
+                margin: 10px;
+                background-color: #F5F3E9;
+                display: inline-block;
+            }
+            .spin-me {
+            	transition: all 2s ease-in-out;
+            }
+            .spin-me:hover {
+            	transform:rotate(360deg);
+            }
+            img {
+                height: 200px;
+                margin-bottom: 10px;
+                transition: all 1s ease-in-out;
+            }
+            img:hover {
+                height: 320px;
+                transition: all 1s ease-in-out;
+            }
+            span {
+                font-weight: bold;
+            }
+            body {
+              background-color: #518;
+            }
+            
+        

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Watercolor Gallery</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        
+        <style>
+            div {
+                border: solid 1px #CCC9B6;
+                padding: 10px;
+                margin: 10px;
+                background-color: #F5F3E9;
+                display: inline-block;
+            }
+            .spin-me {
+            	transition: all 1s ease-in-out;
+            }
+            
+            .spin-me:hover {
+            	transform:rotate(360deg);
+            }
+            img {
+                height: 200px;
+                margin-bottom: 10px;
+                transition: all 1s ease-in-out;
+            }
+            img:hover {
+                height: 320px;
+                transition: all 1s ease-in-out;
+            }
+            span {
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('button').click(showMessage);
+                setTimeout(function() { 
+                  $('.show-me').animate({tranfom: "rotate(360deg)"}, 1s);
+                }, 2000);
+            });
+            
+            function showMessage() {
+            	var price = $(this).parent().find('span').html();
+            	alert("Please send me " + price + " dollars.");
+            }
+        </script>
+    </head>
+    <body class="spin-me">
+        <h1>gio Art </h1>
+        <p>Please buy my art!</p>
+        <div>
+            <img class="spin-me" src="Fantasy_0012.jpg" />
+            <br />
+            Price: <span>$100</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>
+        
+        <div>
+            <img src="images/watercolors/large_image02.jpg" />
+            <br />
+            Price: <span>$1,000</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>
+        
+        <div>
+            <img src="images/watercolors/large_image03.jpg" />
+            <br />
+            Price: <span>$5,700</span>
+            <button class="btn btn-primary pull-right">Add</button>
+        </div>
+        
+        <img src="images/watercolors/large_image04.jpg" />
+        <img src="images/watercolors/large_image05.jpg" />
+        <img src="images/watercolors/large_image06.jpg" />
+        <img src="images/watercolors/large_image07.jpg" />
+        <img src="images/watercolors/large_image08.jpg" />
+        <img src="images/watercolors/large_image09.jpg" />
+        <img src="images/watercolors/large_image10.jpg" />
+        <img src="images/watercolors/large_image11.jpg" />
+        <img src="images/watercolors/large_image12.jpg" />
+    </body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    height: 10000px; /* make the body of the page really tall so we can scroll down really far */
+    margin: 0;
+}
+
+#night-sky {
+    height: 100%; /* make this div take up the whole body */
+    background: rgb(33, 3, 86); /* dark purple background */
+    overflow: hidden; /* anything that does not fit inside the div will be hidden */
+}
+img {
+    position: absolute;
+}
+
+#bat1 {
+    padding-top: 500px;  /* start the bat out lower down */
+    padding-left: 800px; /* and way out to the right */
+}
+#bat2 {
+    padding-top: 400px;  /* start the bat out lower down */
+    padding-left: 250px; /* and way out to the right */
+}
+#bat3 {
+    padding-top: 300px;  /* start the bat out lower down */
+    padding-right: 600px; /* and way out to the right */
+}

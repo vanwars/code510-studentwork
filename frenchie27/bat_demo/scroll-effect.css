@@ -1,0 +1,26 @@
+body {
+    height: 10000px; /* make the body of the page really tall so we can scroll down really far */
+    margin: 0;
+}
+
+#night-sky {
+    height: 100%; /* make this div take up the whole body */
+    background: rgb(255, 218, 185); /* dark purple background */
+    background-image: url("http://lastwallpapers.com/wp-content/uploads/2015/02/foggy_sunrise_at_golden_gate_bridge_wallpaper.jpg"); );
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    overflow: hidden; /* anything that does not fit inside the div will be hidden */
+}
+img {
+    position: absolute;
+}
+
+#seagull {
+    padding-top: 500px;  /* start the bat out lower down */
+    padding-left: 800px; /* and way out to the right */
+}
+
+#paraglider {
+    padding-top: 500px;  /* start the bat out lower down */
+    padding-left: 800px; /* and way out to the right */
+}
